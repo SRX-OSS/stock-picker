@@ -11,6 +11,7 @@ coverage
 # next.js
 .next/
 out/
+.vscode/
 build
 
 # misc
@@ -35,4 +36,3 @@ yarn-error.log*
 .contentlayer
 .env
 
-.vscode
