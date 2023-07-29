@@ -11,6 +11,6 @@ export const siteConfig = {
   ],
   links: {
     twitter: "https://twitter.com/s_r_x_9",
-    github: "https://github.com/SRX9",
+    github: "https://github.com/SRX-OSS/stock-picker",
   },
 };
