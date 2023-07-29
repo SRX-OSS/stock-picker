@@ -1,10 +1,9 @@
-import Link from "next/link"
-
-import { siteConfig } from "@/config/site"
-import { buttonVariants } from "@/components/ui/button"
-import { Icons } from "@/components/icons"
-import { MainNav } from "@/components/main-nav"
-import { ThemeToggle } from "@/components/theme-toggle"
+import { Icons } from "./icons";
+import { buttonVariants } from "./ui/button";
+import { MainNav } from "@/components/main-nav";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { siteConfig } from "@/config/site";
+import Link from "next/link";
 
 export function SiteHeader() {
   return (
@@ -13,6 +12,7 @@ export function SiteHeader() {
         <MainNav items={siteConfig.mainNav} />
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">
+            <ThemeToggle />
             <Link
               href={siteConfig.links.github}
               target="_blank"
@@ -43,10 +43,9 @@ export function SiteHeader() {
                 <span className="sr-only">Twitter</span>
               </div>
             </Link>
-            <ThemeToggle />
           </nav>
         </div>
       </div>
     </header>
-  )
+  );
 }
